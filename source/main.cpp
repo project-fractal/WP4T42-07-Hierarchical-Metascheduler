@@ -84,6 +84,7 @@ int main(int argc, char **argv) {
 	app = ludwig::read_json(inputModel);
 	ctx = ludwig::read_json(contextModel);
 
+
 	Fractal::Model model(app);
 	Fractal::Context context (ctx);
 	float comp_time = 0;
