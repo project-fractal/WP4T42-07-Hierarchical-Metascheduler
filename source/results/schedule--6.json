@@ -1,0 +1,348 @@
+{
+  "contexts": [
+    {
+      "context_type": "Slack",
+      "event_time": 24,
+      "new_value": 50,
+      "source_id": 1
+    }
+  ],
+  "energy": 0.0,
+  "jobs": [
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 0,
+      "position": 5,
+      "runs_on": 12,
+      "start_time": 17,
+      "wcet": 9,
+      "wcet_with_compression": 9,
+      "weight": 3
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 1,
+      "position": 7,
+      "runs_on": 8,
+      "start_time": 20,
+      "wcet": 4,
+      "wcet_with_compression": 4,
+      "weight": 1
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 2,
+      "position": 6,
+      "runs_on": 5,
+      "start_time": 19,
+      "wcet": 4,
+      "wcet_with_compression": 4,
+      "weight": 2
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 3,
+      "position": 4,
+      "runs_on": 1,
+      "start_time": 12,
+      "wcet": 9,
+      "wcet_with_compression": 9,
+      "weight": 4
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 4,
+      "position": 2,
+      "runs_on": 8,
+      "start_time": 8,
+      "wcet": 8,
+      "wcet_with_compression": 8,
+      "weight": 0
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 5,
+      "position": 2,
+      "runs_on": 12,
+      "start_time": 8,
+      "wcet": 9,
+      "wcet_with_compression": 9,
+      "weight": 4
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 6,
+      "position": 3,
+      "runs_on": 5,
+      "start_time": 11,
+      "wcet": 8,
+      "wcet_with_compression": 8,
+      "weight": 8
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 7,
+      "position": 8,
+      "runs_on": 1,
+      "start_time": 21,
+      "wcet": 8,
+      "wcet_with_compression": 8,
+      "weight": 9
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 8,
+      "position": 1,
+      "runs_on": 8,
+      "start_time": 0,
+      "wcet": 8,
+      "wcet_with_compression": 8,
+      "weight": 1
+    },
+    {
+      "can_run_on": [
+        1,
+        5,
+        8,
+        12
+      ],
+      "deadline": 10000,
+      "frequency": 0,
+      "id": 9,
+      "position": 1,
+      "runs_on": 12,
+      "start_time": 0,
+      "wcet": 8,
+      "wcet_with_compression": 8,
+      "weight": 4
+    }
+  ],
+  "makespan": 29,
+  "messages": [
+    {
+      "arrival_time": 17,
+      "compressed_size": 21,
+      "id": 0,
+      "injection_time": 17,
+      "receiver": 0,
+      "route": [],
+      "route_idx": 0,
+      "scheme_idx": 0,
+      "sender": 5,
+      "size": 21,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 20,
+      "compressed_size": 15,
+      "id": 1,
+      "injection_time": 17,
+      "receiver": 1,
+      "route": [
+        12,
+        11,
+        7,
+        8
+      ],
+      "route_idx": 0,
+      "scheme_idx": 0,
+      "sender": 5,
+      "size": 15,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 19,
+      "compressed_size": 20,
+      "id": 2,
+      "injection_time": 19,
+      "receiver": 2,
+      "route": [],
+      "route_idx": 0,
+      "scheme_idx": 0,
+      "sender": 6,
+      "size": 20,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 8,
+      "compressed_size": 17,
+      "id": 3,
+      "injection_time": 8,
+      "receiver": 4,
+      "route": [],
+      "route_idx": 0,
+      "scheme_idx": 0,
+      "sender": 8,
+      "size": 17,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 15,
+      "compressed_size": 22,
+      "id": 4,
+      "injection_time": 10,
+      "receiver": 7,
+      "route": [
+        8,
+        7,
+        3,
+        2,
+        0,
+        1
+      ],
+      "route_idx": 1,
+      "scheme_idx": 0,
+      "sender": 8,
+      "size": 22,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 8,
+      "compressed_size": 22,
+      "id": 5,
+      "injection_time": 8,
+      "receiver": 0,
+      "route": [],
+      "route_idx": 0,
+      "scheme_idx": 0,
+      "sender": 9,
+      "size": 22,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 12,
+      "compressed_size": 24,
+      "id": 6,
+      "injection_time": 8,
+      "receiver": 3,
+      "route": [
+        12,
+        11,
+        7,
+        3,
+        1
+      ],
+      "route_idx": 1,
+      "scheme_idx": 0,
+      "sender": 9,
+      "size": 24,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 8,
+      "compressed_size": 24,
+      "id": 7,
+      "injection_time": 8,
+      "receiver": 5,
+      "route": [],
+      "route_idx": 0,
+      "scheme_idx": 0,
+      "sender": 9,
+      "size": 24,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 11,
+      "compressed_size": 23,
+      "id": 8,
+      "injection_time": 8,
+      "receiver": 6,
+      "route": [
+        12,
+        9,
+        4,
+        5
+      ],
+      "route_idx": 0,
+      "scheme_idx": 0,
+      "sender": 9,
+      "size": 23,
+      "timetriggered": true
+    },
+    {
+      "arrival_time": 13,
+      "compressed_size": 24,
+      "id": 9,
+      "injection_time": 9,
+      "receiver": 7,
+      "route": [
+        12,
+        9,
+        4,
+        0,
+        1
+      ],
+      "route_idx": 0,
+      "scheme_idx": 0,
+      "sender": 9,
+      "size": 24,
+      "timetriggered": true
+    }
+  ],
+  "parent_schedule": 4,
+  "uid": 6,
+  "valid": true
+}

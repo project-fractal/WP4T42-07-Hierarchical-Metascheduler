@@ -1,0 +1,81 @@
+#ifndef TSORT_HPP
+#define TSORT_HPP
+
+#include <iostream>
+#include <vector>
+#include <map>
+
+namespace ludwig
+{
+  class tsort {
+  public:
+    tsort (int v)
+    {
+      v_ = v;
+      indegree_ = new int[v_];
+      marked_ = new bool[v_];
+      for (int i=0; i<v_; ++i)
+	{
+	  indegree_[i] = 0;
+	  marked_[i] = false;
+	}
+    }
+    
+    ~tsort ()
+    {
+      delete [] indegree_, marked_;
+    }
+    
+    void add_edge (int a, int b)
+    {
+      adj_[a].push_back (b);
+      indegree_[b]++;
+    }
+    
+    void sort ()
+    {
+      bool flag = false;
+      for (int w=0; w<v_; w++)
+	{
+	  if (!marked_[w] && indegree_[w]==0)
+	    {
+	      marked_[w] = true;
+	      for (auto k : adj_[w])
+		indegree_[k]--;
+	      
+	      list_.push_back (w);
+	      // std:: cout << w<< " " ;
+
+	      sort ();
+	      // std:: cout << "after";
+	      // std:: cout << w<< " " ;
+	      // marked_[w] = false;
+	      // for (auto k : adj_[w])
+	      // 	indegree_[k]++;
+	      // list_.pop_back ();
+	      
+	      //   flag = true;
+	    }
+	}
+      
+      
+      if (!flag)
+	orders_.push_back (list_);
+      // std:: cout <<"order" << orders_.size() << std:: endl;
+    }
+
+    std::vector<std::vector<int>> get_orders ()
+    {
+      return orders_;
+    }
+    
+  private:
+    int v_;
+    int *indegree_;
+    bool *marked_;
+    std::map<int, std::vector<int>> adj_;
+    std::vector<std::vector<int>> orders_;
+    std::vector<int> list_;
+  }; // class
+} //namespace
+#endif

@@ -1,0 +1,5 @@
+100 -> popsz
+1000 -> ngen
+0.2 -> pmut
+0.9 -> pcross
+1.0 -> pconverg

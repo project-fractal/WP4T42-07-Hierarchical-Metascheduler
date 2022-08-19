@@ -1,0 +1,11 @@
+{
+    "slacks" : [
+   	],
+    "faults" : [
+        {
+	     "NodeId" : -1,
+	     "Occur": 35,
+	     "type" : "crash"
+	    }
+	]
+}

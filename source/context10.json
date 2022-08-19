@@ -1,0 +1,51 @@
+{
+    "slacks" : [
+	{
+        "job": 0,
+        "NewExecutionTime": 3
+        },
+	{
+        "job": 1,
+        "NewExecutionTime": 4
+        },
+	{
+        "job": 2,
+        "NewExecutionTime": 4
+        },
+	{
+        "job": 3,
+        "NewExecutionTime": 3
+        },
+	{
+        "job": 4,
+        "NewExecutionTime": 4
+        },
+	{
+        "job": 5,
+        "NewExecutionTime": 3
+        },
+	{
+        "job": 6,
+        "NewExecutionTime": 4
+        },
+	{
+        "job": 7,
+        "NewExecutionTime": 4
+        },
+	{
+        "job": 8,
+        "NewExecutionTime": 5
+        },
+	{
+        "job": 9,
+        "NewExecutionTime": 4
+        }
+   	],
+    "faults" : [
+        {
+	     "NodeId" : -1,
+	     "Occur": 35,
+	     "type" : "crash"
+	    }
+	]
+}

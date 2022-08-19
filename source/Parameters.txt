@@ -1,0 +1,10 @@
+example_N2.json -> AM/PM
+context0.json -> CM
+50 -> Horizon
+3 -> Sample frequency
+100 -> popsz
+1000 -> ngen
+0.2 -> pmut
+0.5 -> pcross
+1.0 -> pconvg
+10 -> number of MSG
