@@ -81,7 +81,7 @@ int main(int argc, char **argv) {
 	/* Variable to store application model*/
 	json app;
 	json ctx;
-	app = ludwig::read_json(inputModel); // this should work
+	app = ludwig::read_json(inputModel);
 	ctx = ludwig::read_json(contextModel);
 
 	Fractal::Model model(app);
