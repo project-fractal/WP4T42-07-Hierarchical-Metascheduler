@@ -7,4 +7,4 @@ context0.json -> CM
 0.2 -> pmut
 0.5 -> pcross
 1.0 -> pconvg
-10 -> number of MSG
+1 -> number of MSG
