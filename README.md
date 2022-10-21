@@ -24,7 +24,7 @@ C++ compiler
 
 ```sh
 $ Clone repository				#	get local copy of source files
-$ cd repository/source				#	change directory to source directory
+$ cd path/to/repository/source			#	change directory to source directory
 $ make						#	compile source files
 ```
 
